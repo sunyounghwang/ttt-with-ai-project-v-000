@@ -66,7 +66,7 @@ class Game
     puts "The game is over..."
     board.display
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
-    puts 
+    puts
   end
 
   def set_up
@@ -95,7 +95,7 @@ class Game
     input = gets.strip
 
     if input == "Y"
-        
+
     end
   end
 end
