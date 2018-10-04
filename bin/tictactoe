@@ -21,6 +21,7 @@ when 2
   game = Game.new
 end
 
+play_again = nil
 until game.over?
   game.play
 end
