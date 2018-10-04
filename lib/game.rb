@@ -18,17 +18,17 @@ class Game
 
     case num_players
     when 0
-      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+      game = new(Players::Computer.new("X"), Players::Computer.new("O"))
     when 1
       puts "Do you want to be player X and start the match? Y/N"
       input = gets.strip
       if input == "Y"
-        game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+        game = new(Players::Human.new("X"), Players::Computer.new("O"))
       elsif input == "N"
-        game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
+        game = new(Players::Computer.new("X"), Players::Human.new("O"))
       end
     when 2
-      game = Game.new
+      game = new
     end
   end
 
