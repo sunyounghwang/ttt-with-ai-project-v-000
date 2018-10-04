@@ -81,7 +81,7 @@ class Game
     end
   end
 
-  def set_up
+  def self.set_up
     puts "How many players are playing this time? 0, 1, or 2?"
     num_players = gets.strip.to_i
 
