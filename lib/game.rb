@@ -51,7 +51,25 @@ class Game
     puts "Welcome to Tic Tac Toe!"
   end
 
-  def set_up
+  def set_up(input)
+    case num_players
+    when 0
+      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+      game.play
+    when 1
+      puts "Do you want to be player X and start the match? Y/N"
+      input = gets.strip
+      if input == "Y"
+        game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+        game.play
+      elsif input == "N"
+        game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
+        game.play
+      end
+    when 2
+      game = Game.new
+      game.play
+    end
   end
 
   def start
