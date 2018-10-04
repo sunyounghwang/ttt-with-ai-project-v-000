@@ -47,10 +47,6 @@ class Game
     board.valid_move?(input) ? board.update(input, current_player) : turn
   end
 
-  def greeting
-    puts "Welcome to Tic Tac Toe!"
-  end
-
   def start
     puts "Ohhh, sounds like an interesting match..."
     puts "Here's the board:"
