@@ -69,5 +69,14 @@ class Game
   end
 
   def play_again
+    puts "Want to play again? Y/N"
+    input = gets.strip
+
+    if input == "Y"
+      play
+    elsif input == "N"
+      puts "Alrighty then, see you next time!"
+      exit
+    end
   end
 end
