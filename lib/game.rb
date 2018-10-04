@@ -73,9 +73,7 @@ class Game
     input = gets.strip
 
     if input == "Y"
-      game = set_up
-      game.play
-
+      set_up
     elsif input == "N"
       puts "Alrighty then, see you next time!"
       exit
