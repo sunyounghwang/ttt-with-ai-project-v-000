@@ -68,5 +68,6 @@ class Game
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     puts "Want to play again?"
     input = gets.strip
+    puts "Worked!"
   end
 end
