@@ -51,29 +51,6 @@ class Game
     puts "Welcome to Tic Tac Toe!"
   end
 
-  def set_up
-    puts "How many players are playing this time? 0, 1, or 2?"
-    num_players = gets.strip.to_i
-
-    case num_players
-    when 0
-      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
-      game.play
-    when 1
-      puts "Do you want to be player X and start the match? Y/N"
-      input = gets.strip
-      if input == "Y"
-        game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
-        game.play
-      elsif input == "N"
-        game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
-        game.play
-      end
-    when 2
-      game = Game.new
-      game.play
-    end
-  end
 
   def start
     set_up
@@ -95,12 +72,6 @@ class Game
     puts "The game is over..."
     board.display
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
-  end
-
-  def another_game
-    puts "Do you wish to play another game? Y/N"
-    input = gets.strip
-    if input == "Y"
-    end
+    puts
   end
 end
