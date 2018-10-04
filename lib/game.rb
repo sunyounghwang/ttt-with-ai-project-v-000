@@ -70,6 +70,9 @@ class Game
   end
 
   def set_up
+    puts "How many players are playing this time? 0, 1, or 2?"
+    num_players = gets.strip.to_i
+    
     case num_players
     when 0
       game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
