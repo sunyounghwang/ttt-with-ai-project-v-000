@@ -21,7 +21,8 @@ when 2
   game = Game.new
 end
 
-game.play
+until game.over?
+  game.play
 
 puts "Want to play again? Y/N"
 input = gets.strip
