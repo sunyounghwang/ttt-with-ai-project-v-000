@@ -68,6 +68,11 @@ class Game
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
   end
 
-  def play_again
+  def another_game
+    puts "Do you wish to play another game? Y/N"
+    input = gets.strip
+
+    if input == "Y"
+    end
   end
 end
