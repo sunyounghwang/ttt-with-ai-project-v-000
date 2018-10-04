@@ -70,7 +70,7 @@ class Game
     input = gets.strip
 
     if input == "Y"
-      game.play
+      play
     elsif input == "N"
       puts "Alrighty then, see you next time!"
       exit
