@@ -23,6 +23,7 @@ end
 
 until game.over?
   game.play
+end
 
 puts "Want to play again? Y/N"
 input = gets.strip
