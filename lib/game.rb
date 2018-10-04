@@ -37,7 +37,7 @@ class Game
     input = gets.strip
 
     if input == "Y"
-      puts "Here we go again!"
+      puts "That's the spirit. Here we go again!"
       set_up.play
     elsif input == "N"
       puts "Alrighty, see you next time!"
