@@ -3,7 +3,7 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe!"
-puts "How many players are playing this time?"
+puts "How many players are playing this time? 0, 1, or 2?"
 num_players = gets.strip.to_i
 
 case num_players
