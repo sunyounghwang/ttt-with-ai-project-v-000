@@ -67,4 +67,7 @@ class Game
     board.display
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
   end
+
+  def play_again
+  end
 end
