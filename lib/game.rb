@@ -47,7 +47,7 @@ class Game
     board.valid_move?(input) ? board.update(input, current_player) : turn
   end
 
-  def set_up_game
+  def set_up
     case num_players
     when 0
       game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
