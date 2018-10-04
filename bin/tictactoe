@@ -22,7 +22,7 @@ when 2
 end
 
 play_again = nil
-until game.over?
+until play_again
   game.play
 end
 
