@@ -52,6 +52,7 @@ class Game
   end
 
   def start
+    set_up
     puts "Ohhh, sounds like an interesting match..."
     puts "Here's the board:"
     board.display
