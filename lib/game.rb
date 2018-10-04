@@ -72,6 +72,7 @@ class Game
     if input == "Y"
       game.play
     elsif input == "N"
+      puts "Alrighty then, see you next time!"
       exit
     end
   end
