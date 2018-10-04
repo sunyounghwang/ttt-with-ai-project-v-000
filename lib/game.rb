@@ -66,8 +66,11 @@ class Game
     puts "The game is over..."
     board.display
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
-    puts "Want to play again?"
+    puts "Want to play again? Y/N"
     input = gets.strip
-    puts "Worked!"
+
+    if input == "Y"
+      game.play
+    end
   end
 end
