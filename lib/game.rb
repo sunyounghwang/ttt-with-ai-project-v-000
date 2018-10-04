@@ -51,6 +51,7 @@ class Game
     puts "Ohhh, sounds like an interesting match..."
     puts "Here's the board:"
     board.display
+    puts "\n\n"
   end
 
   def play
