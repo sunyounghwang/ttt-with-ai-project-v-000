@@ -66,6 +66,28 @@ class Game
     puts "The game is over..."
     board.display
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
+    puts 
+  end
+
+  def set_up
+    case num_players
+    when 0
+      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+      game.play
+    when 1
+      puts "Do you want to be player X and start the match? Y/N"
+      input = gets.strip
+      if input == "Y"
+        game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+        game.play
+      elsif input == "N"
+        game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
+        game.play
+      end
+    when 2
+      game = Game.new
+      game.play
+    end
   end
 
   def another_game
@@ -73,6 +95,7 @@ class Game
     input = gets.strip
 
     if input == "Y"
+        
     end
   end
 end
