@@ -3,6 +3,5 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe!"
-game = Game.set_up
-game.play
+Game.set_up.play
 Game.play_again
