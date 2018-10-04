@@ -68,3 +68,6 @@ class Game
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
   end
 end
+
+def exit
+end
