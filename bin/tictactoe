@@ -24,15 +24,14 @@ end
 play_again = nil
 until play_again
   game.play
-end
+  puts "Want to play again? Y/N"
+  input = gets.strip
 
-puts "Want to play again? Y/N"
-input = gets.strip
-
-if input == "Y"
-  game = self.new
-  game.play
-elsif input == "N"
-  puts "Alrighty then, see you next time!"
-  exit
+  if input == "Y"
+    game = self.new
+    game.play
+  elsif input == "N"
+    puts "Alrighty then, see you next time!"
+    exit
+  end
 end
