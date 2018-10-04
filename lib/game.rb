@@ -100,9 +100,7 @@ class Game
   def another_game
     puts "Do you wish to play another game? Y/N"
     input = gets.strip
-
     if input == "Y"
-
     end
   end
 end
