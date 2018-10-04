@@ -24,4 +24,3 @@ when 2
   game = Game.new
   game.play
 end
-=end
