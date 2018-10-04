@@ -25,7 +25,7 @@ play_again = "Y"
 while play_again
   game.play
   puts "Want to play again? Y/N"
-  input = gets.strip
+  play_again = gets.strip
 
   if input == "Y"
     game = self.new
