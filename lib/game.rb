@@ -35,7 +35,6 @@ class Game
   def self.play_again
     puts "Want to play again? Y/N"
     input = gets.strip
-
     if input == "Y"
       puts "That's the spirit. Here we go again!"
       set_up.play
