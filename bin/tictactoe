@@ -32,3 +32,4 @@ if input == "Y"
 elsif input == "N"
   puts "Alrighty then, see you next time!"
   exit
+end
