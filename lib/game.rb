@@ -66,6 +66,5 @@ class Game
     puts "The game is over..."
     board.display
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
-    puts
   end
 end
