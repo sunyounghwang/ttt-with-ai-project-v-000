@@ -12,18 +12,6 @@ class Game
 
   attr_accessor :board, :player_1, :player_2
 
-  def self.play_again
-    puts "Want to play again? Y/N"
-    input = gets.strip
-
-    if input == "Y"
-      set_up.play
-    elsif input == "N"
-      puts "Alrighty then, see you next time!"
-      exit
-    end
-  end
-
   def self.set_up
     puts "How many players are playing this time? 0, 1, or 2?"
     num_players = gets.strip.to_i
@@ -41,6 +29,18 @@ class Game
       end
     when 2
       game = Game.new
+    end
+  end
+
+  def self.play_again
+    puts "Want to play again? Y/N"
+    input = gets.strip
+
+    if input == "Y"
+      set_up.play
+    elsif input == "N"
+      puts "Alrighty then, see you next time!"
+      exit
     end
   end
 
