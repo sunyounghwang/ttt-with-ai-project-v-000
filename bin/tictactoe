@@ -21,7 +21,7 @@ when 2
   game = Game.new
 end
 
-play_again = nil
+play_again = true
 until play_again
   game.play
   puts "Want to play again? Y/N"
