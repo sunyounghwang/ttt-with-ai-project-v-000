@@ -60,6 +60,7 @@ class Game
       turn
       puts "A move was made!"
       board.display
+      puts "\n\n"
     end
     puts "The game is over..."
     board.display
