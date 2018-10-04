@@ -22,7 +22,6 @@ when 2
 end
 
 play_again = true
-while play_again
   game.play
   puts "Want to play again? Y/N"
   input = gets.strip
