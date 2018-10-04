@@ -21,11 +21,11 @@ when 2
   game = Game.new
 end
 
-play_again = "Y"
-while play_again == "Y"
+play_again = true
+while play_again
   game.play
   puts "Want to play again? Y/N"
-  play_again = gets.strip
+  input = gets.strip
 
   if input == "Y"
     game = self.new
