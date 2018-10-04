@@ -73,7 +73,8 @@ class Game
     input = gets.strip
 
     if input == "Y"
-      play
+      game = self.new
+
     elsif input == "N"
       puts "Alrighty then, see you next time!"
       exit
