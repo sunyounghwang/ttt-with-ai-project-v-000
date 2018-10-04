@@ -10,7 +10,7 @@ module Players
 
     def winning_move(board)
       winner = Game::WIN_COMBINATIONS.detect do |combo|
-        num_tokens = combo.count { |i| board.cells[i] == token }
+        num_tokens = combo.count { |i| board.cells[i] == self.token }
         num_empty = combo.count { |i| board.cells[i] == " " }
         num_tokens == 2 && num_empty == 1 ? true : false
       end
