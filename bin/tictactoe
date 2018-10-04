@@ -22,7 +22,7 @@ when 2
 end
 
 play_again = "Y"
-while play_again
+while play_again == "Y"
   game.play
   puts "Want to play again? Y/N"
   play_again = gets.strip
