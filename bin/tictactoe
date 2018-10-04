@@ -20,3 +20,5 @@ when 1
 when 2
   game = Game.new
 end
+
+game.play
