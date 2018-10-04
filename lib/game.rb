@@ -51,29 +51,6 @@ class Game
     puts "Welcome to Tic Tac Toe!"
   end
 
-  def start
-    set_up
-    puts "Ohhh, sounds like an interesting match..."
-    puts "Here's the board:"
-    board.display
-    puts "\n\n"
-  end
-
-  def play
-    start
-    until over?
-      puts "Player #{current_player.token}, it's your turn!"
-      turn
-      puts "A move was made!"
-      board.display
-      puts "\n\n"
-    end
-    puts "The game is over..."
-    board.display
-    puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
-    puts
-  end
-
   def set_up
     puts "How many players are playing this time? 0, 1, or 2?"
     num_players = gets.strip.to_i
@@ -96,6 +73,29 @@ class Game
       game = Game.new
       game.play
     end
+  end
+
+  def start
+    set_up
+    puts "Ohhh, sounds like an interesting match..."
+    puts "Here's the board:"
+    board.display
+    puts "\n\n"
+  end
+
+  def play
+    start
+    until over?
+      puts "Player #{current_player.token}, it's your turn!"
+      turn
+      puts "A move was made!"
+      board.display
+      puts "\n\n"
+    end
+    puts "The game is over..."
+    board.display
+    puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
+    puts
   end
 
   def another_game
