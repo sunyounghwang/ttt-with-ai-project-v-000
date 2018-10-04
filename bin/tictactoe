@@ -31,6 +31,7 @@ while play_again
     game = self.new
     game.play
   elsif input == "N"
+    play_again = false
     puts "Alrighty then, see you next time!"
     exit
   end
