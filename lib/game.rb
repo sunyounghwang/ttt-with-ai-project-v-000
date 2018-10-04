@@ -39,6 +39,7 @@ class Game
     if input == "Y"
       puts "That's the spirit. Here we go again!"
       set_up.play
+      Game.play_again
     elsif input == "N"
       puts "Alrighty, see you next time!"
       exit
