@@ -71,6 +71,8 @@ class Game
 
     if input == "Y"
       game.play
+    elsif input == "N"
+      exit
     end
   end
 end
