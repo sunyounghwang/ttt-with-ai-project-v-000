@@ -51,6 +51,9 @@ class Game
     puts "Welcome to Tic Tac Toe!"
   end
 
+  def set_up
+  end
+
   def start
     puts "Ohhh, sounds like an interesting match..."
     puts "Here's the board:"
